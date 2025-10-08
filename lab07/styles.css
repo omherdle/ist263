@@ -1,0 +1,21 @@
+body {font-family: 'Times New Roman', Times, serif;}
+body {background-color: #8b8c89;}
+body {color: #e7ecef;}
+link {color: #274c77;}
+a {color: #274c77;}
+a:hover {color: #8b8c89;}
+
+h1 {color: #e7ecef;}
+h2 {color: #e7ecef;}
+h3 {color: #e7ecef;}
+
+
+nav {background-color:#8b8c89;}
+nav a {color: #e7ecef;}
+nav a:hover {color:#e7ecef;}
+nav a:hover {background-color: #8b8c89;}
+nav {padding: 10px}
+nav {margin-bottom: 30px}
+
+
+
