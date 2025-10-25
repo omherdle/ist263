@@ -1,27 +1,29 @@
+
 body {font-family: 'Times New Roman', Times, serif;}
-body {background-color: #282943;}
-body {color: #e7ecef;}
-link {color: #595c5f;}
-a {color: #c5c9cd;}
-a:hover {color: #8b8c89;}
+body {background-color: #1c1f26;}
+body {color: #f1f3f5;}
+link {color: #a7b8ff;}
+a {color: #93c5fd;}
+a:hover {color: #60a5fa;}
 
-h1 {color: #7b7e80;}
-h2 {color: #717475;}
-h3 {color: #76797a;}
+h1 {color: #f8fafc;}
+h2 {color: #e2e8f0;}
+h3 {color: #cbd5e1;}
 
-
-nav {background-color:#8b8c89;}
-nav a {color: #e7ecef;}
-nav a:hover {color:#e7ecef;}
-nav a:hover {background-color: #8b8c89;}
+nav {background-color:#2d3748;}
+nav a {color: #f8fafc;}
+nav a:hover {color:#60a5fa;}
+nav a:hover {background-color: #1e293b;}
 nav {padding: 10px}
 nav {margin-bottom: 30px}
 
 footer {
-  background-color: #f8e5e5;
+  background-color: #111827;
+  color: #e5e7eb;
   padding: 5px;
 }
 
+/* Left/right floats */
 .left {
   float: left;
 }
@@ -33,7 +35,7 @@ footer {
 /* Row 1 Styles */
 .row1 {
     display: flex;
-    background-color: #f0f0f0;
+    background-color: #2b2f38;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -42,14 +44,14 @@ footer {
 
 .row1 .column1 {
     flex: 1;
-    background-color: #e3f2fd;
+    background-color: #374151;
     padding: 20px;
     border-radius: 8px;
 }
 
 .row1 .column2 {
     flex: 1;
-    background-color: #fff3e0;
+    background-color: #4b5563;
     padding: 20px;
     border-radius: 8px;
 }
@@ -57,7 +59,7 @@ footer {
 /* Row 2 Styles */
 .row2 {
     display: flex;
-    background-color: #f0f0f0;
+    background-color: #2b2f38;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
@@ -66,14 +68,14 @@ footer {
 
 .row2 .column1 {
     flex: 1;
-    background-color: #e8f5e9;
+    background-color: #374151;
     padding: 20px;
     border-radius: 8px;
 }
 
 .row2 .column2 {
     flex: 1;
-    background-color: #fce4ec;
+    background-color: #4b5563;
     padding: 20px;
     border-radius: 8px;
 }
@@ -83,6 +85,7 @@ footer {
     width: 100%;
     height: 450px;
     border-radius: 8px;
+    border: 2px solid #1e293b;
 }
 
 /* Form styling */
@@ -96,12 +99,14 @@ form textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #475569;
     border-radius: 4px;
+    background-color: #1e293b;
+    color: #f8fafc;
 }
 
 form input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #3b82f6;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -111,7 +116,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #2563eb;
 }
 
 /* Add spacing to image */
