@@ -1,13 +1,13 @@
 body {font-family: 'Times New Roman', Times, serif;}
-body {background-color: #8b8c89;}
+body {background-color: #282943;}
 body {color: #e7ecef;}
-link {color: #274c77;}
-a {color: #274c77;}
+link {color: #595c5f;}
+a {color: #c5c9cd;}
 a:hover {color: #8b8c89;}
 
-h1 {color: #e7ecef;}
-h2 {color: #e7ecef;}
-h3 {color: #e7ecef;}
+h1 {color: #7b7e80;}
+h2 {color: #717475;}
+h3 {color: #76797a;}
 
 
 nav {background-color:#8b8c89;}
