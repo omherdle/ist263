@@ -125,3 +125,8 @@ form input[type="submit"]:hover {
     max-width: 100%;
     border-radius: 5px;
 }
+
+/* Fix form text color */
+form {
+  color: #000000;
+}
