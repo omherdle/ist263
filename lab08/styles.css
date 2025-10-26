@@ -102,7 +102,7 @@ form textarea {
     border: 1px solid #475569;
     border-radius: 4px;
     background-color: #1e293b;
-    color: #f8fafc;
+    color: #000000;
 }
 
 form input[type="submit"] {
@@ -126,22 +126,3 @@ form input[type="submit"]:hover {
     border-radius: 5px;
 }
 
-/* Make ALL form text dark */
-form,
-form label {
-  color: #111111 !important;
-}
-
-/* Make the text inside inputs/selects/textarea dark, too */
-form input,
-form select,
-form textarea {
-  color: #111111 !important;
-}
-
-/* Optional: tune placeholder color so it’s readable */
-form input::placeholder,
-form textarea::placeholder {
-  color: #6b7280;   /* medium gray */
-  opacity: 1;       /* Firefox */
-}
