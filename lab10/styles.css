@@ -126,3 +126,9 @@ form input[type="submit"]:hover {
     border-radius: 5px;
 }
 
+/* Responsive image scaling */
+.profile_img {
+    max-width: 100%;
+    height: auto;
+}
+
