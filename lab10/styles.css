@@ -59,6 +59,7 @@ footer {
 /* Row 2 Styles */
 .row2 {
     display: flex;
+    flex-wrap: wrap;      
     background-color: #2b2f38;
     padding: 20px;
     margin: 20px;
@@ -130,5 +131,27 @@ form input[type="submit"]:hover {
 .profile_img {
     max-width: 100%;
     height: auto;
+}
+
+/* Responsive navigation for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;         /* makes links take up full width */
+        width: 100%;            /* stretch across nav container */
+        text-align: center;     /* center text */
+        margin: 8px 0;          /* adds space between stacked links */
+        padding: 10px 0;        /* optional: gives each link a little vertical padding */
+    }
+
+    nav span {
+        display: none;          /* hides the pipe characters on smaller screens */
+    }
 }
 
