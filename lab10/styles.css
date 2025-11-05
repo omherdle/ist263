@@ -133,24 +133,25 @@ form input[type="submit"]:hover {
     height: auto;
 }
 
-/* Responsive navigation for tablets and smaller screens */
+/* Stack nav links vertically on smaller screens */
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
-    flex-direction: column; /* stack children vertically */
-    align-items: stretch;   /* make them fill the width */
+    flex-direction: column;   /* stack children vertically */
+    align-items: flex-start;  /* align links to the left */
   }
 
   nav a {
-    display: block;         /* put each link on its own line */
-    width: 100%;            /* full width so they can’t sit side-by-side */
-    text-align: center;
-    margin: 6px 0;          /* small space between links */
+    display: block;           /* make links block-level so they sit on separate lines */
+    width: 100%;              /* make each link take up full width */
+    text-align: center;       /* optional: centers link text */
+    margin: 8px 0;            /* add space between links */
   }
 
   nav span {
-    display: none;          /* hide the pipe separators */
+    display: none;            /* hide the "|" separators on smaller screens */
   }
 }
+
 
 
