@@ -133,24 +133,22 @@ form input[type="submit"]:hover {
     height: auto;
 }
 
-/* Responsive navigation for tablets and smaller screens */
-@media screen and (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
+/* Media Query for Tablet and Mobile - Stacking Navigation */
+@media (max-width: 768px) {
+    
     nav a {
-        display: block;        /* makes links take up full width */
-        width: 100%;           /* ensures each one is on its own line */
-        text-align: center;    /* centers the link text */
-        margin: 8px 0;         /* adds small space between links */
+        display: block;
+        width: 100%;
+        padding: 15px 10px;
+        border-bottom: 1px solid #000000;
     }
-
+   
+    nav a:last-child {
+        border-bottom: none;
+    }
+   
     nav span {
-        display: none;         /* hides the pipe characters */
+        display: none;
     }
 }
 
