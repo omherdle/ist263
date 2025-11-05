@@ -143,15 +143,15 @@ form input[type="submit"]:hover {
     }
 
     nav a {
-        display: block;         /* makes links take up full width */
-        width: 100%;            /* stretch across nav container */
-        text-align: center;     /* center text */
-        margin: 8px 0;          /* adds space between stacked links */
-        padding: 10px 0;        /* optional: gives each link a little vertical padding */
+        display: block;        /* makes links take up full width */
+        width: 100%;           /* ensures each one is on its own line */
+        text-align: center;    /* centers the link text */
+        margin: 8px 0;         /* adds small space between links */
     }
 
     nav span {
-        display: none;          /* hides the pipe characters on smaller screens */
+        display: none;         /* hides the pipe characters */
     }
 }
+
 
