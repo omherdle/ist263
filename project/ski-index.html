@@ -40,14 +40,14 @@
       text-decoration: underline;
     }
 
-    /* FIXED VERSION — includes padding to align text & images */
+    /* FINAL FIX — aligns text & image column TOPS perfectly */
     .mountains-container {
       display: flex;
       justify-content: center;
+      align-items: flex-start; /* <-- REAL FIX */
       gap: 80px;
       max-width: 1200px;
       margin: 0 auto;
-      padding-top: 40px;   /* <-- THE FIX */
     }
 
     .text-column {
