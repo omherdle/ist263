@@ -1,0 +1,172 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #1c1f26;
+  color: #f1f3f5;
+  font-size: 1rem;  /* relative unit, same visual size as default */
+}
+
+link {color: #a7b8ff;}
+a {color: #93c5fd;}
+a:hover {color: #60a5fa;}
+
+h1 {color: #f8fafc;}
+h2 {color: #e2e8f0;}
+h3 {color: #cbd5e1;}
+
+nav {background-color:#2d3748;}
+nav a {color: #f8fafc;}
+nav a:hover {color:#60a5fa;}
+nav a:hover {background-color: #1e293b;}
+nav {padding: 10px}
+nav {margin-bottom: 30px}
+
+footer {
+  background-color: #111827;
+  color: #e5e7eb;
+  padding: 5px;
+}
+
+/* Left/right floats */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* Row 1 Styles */
+.row1 {
+    display: flex;
+    background-color: #2b2f38;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.row1 .column1 {
+    flex: 1;
+    background-color: #374151;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.row1 .column2 {
+    flex: 1;
+    background-color: #4b5563;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Row 2 Styles */
+.row2 {
+    display: flex;
+    flex-wrap: wrap;      
+    background-color: #2b2f38;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.row2 .column1 {
+    flex: 1;
+    background-color: #374151;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.row2 .column2 {
+    flex: 1;
+    background-color: #4b5563;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Make iframe responsive */
+.row2 .column2 iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    border: 2px solid #1e293b;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #475569;
+    border-radius: 4px;
+    background-color: #1e293b;
+    color: #000000;
+}
+
+form input[type="submit"] {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2563eb;
+}
+
+/* Add spacing to image */
+.row1 .column2 img {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Responsive image scaling */
+.profile_img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Skip to main content link (off-screen until focused) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background-color: #f8fafc;
+  color: #000000;
+  padding: 8px 12px;
+  z-index: 1000;
+}
+
+/* Stack nav links vertically on smaller screens */
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;   /* stack children vertically */
+    align-items: flex-start;  /* align links to the left */
+  }
+
+  nav a {
+    display: block;           /* make links block-level so they sit on separate lines */
+    width: 100%;              /* make each link take up full width */
+    text-align: center;       /* optional: centers link text */
+    margin: 8px 0;            /* add space between links */
+  }
+
+  nav span {
+    display: none;            /* hide the "|" separators on smaller screens */
+  }
+}
