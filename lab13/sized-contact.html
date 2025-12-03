@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <a href="#maincontent" class="skip-link">Skip to main content</a>
 
     <nav>
@@ -20,13 +21,11 @@
        
         <!-- Row 1 -->
         <div class="row1">
-            <!-- Column 1: Address -->
             <div class="column1">
                 <h2>Owen Herdler</h2>
                 <h2>404 University Ave</h2>
             </div>
            
-            <!-- Column 2: Links -->
             <div class="column2">
                 <a href="https://www.linkedin.com/in/owenherdler/">My LinkedIn Profile</a><br>
                 <a href="mailto:omherdle@syr.edu">Owen Herdler Email</a><br>
@@ -36,46 +35,43 @@
        
         <!-- Row 2 -->
         <div class="row2">
-            <!-- Column 1: Form -->
             <div class="column1">
                 <form action="https://formspree.io/f/xpwjgbwp" method="post">
-                    <!-- Text field -->
+
                     <label for="name">Enter your name:</label><br>
                     <input type="text" id="name" name="name"><br><br>
-                   
-                    <!-- Radio button -->
-                    <p>Preferred Contact Method:</p>
-                    <input type="radio" id="email" name="contact" value="email">
-                    <label for="email">Email</label><br>
 
-                    <input type="radio" id="phone" name="contact" value="phone">
-                    <label for="phone">Phone</label><br><br>
-                   
-                    <!-- Select (dropdown) -->
+                    <fieldset>
+                        <legend>Preferred Contact Method:</legend>
+
+                        <input type="radio" id="email" name="contact" value="email">
+                        <label for="email">Email</label><br>
+
+                        <input type="radio" id="phone" name="contact" value="phone">
+                        <label for="phone">Phone</label><br>
+                    </fieldset>
+                    <br>
+
                     <label for="reason">Reason for Contact:</label><br>
                     <select id="reason" name="reason">
                         <option value="question">General Question</option>
                         <option value="support">Support</option>
                         <option value="feedback">Feedback</option>
                     </select><br><br>
-                   
-                    <!-- Textarea -->
+
                     <label for="message">Your Message:</label><br>
                     <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
-                   
-                    <!-- Submit button -->
+
                     <input type="submit" value="Submit">
                 </form>
             </div>
            
-            <!-- Column 2: Map -->
             <div class="column2">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5831.5261064861115!2d-76.13737882405107!3d43.046416671137365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a721b158ab%3A0x3d68244594f4f5de!2s404%20University%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1757542549204!5m2!1sen!2sus"
                     width="600"
                     height="450"
                     style="border:0;"
-                    allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -84,5 +80,6 @@
     </main>
 
     <p>&copy;2025</p>
+
 </body>
 </html>

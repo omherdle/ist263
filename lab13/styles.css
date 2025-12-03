@@ -2,10 +2,9 @@ body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #1c1f26;
   color: #f1f3f5;
-  font-size: 1rem;  /* relative unit, same visual size as default */
+  font-size: 1rem;
 }
 
-link {color: #a7b8ff;}
 a {color: #93c5fd;}
 a:hover {color: #60a5fa;}
 
@@ -26,17 +25,10 @@ footer {
   padding: 5px;
 }
 
-/* Left/right floats */
-.left {
-  float: left;
-}
+.left { float: left; }
+.right { float: right; }
 
-.right {
-  float: right;
-}
-
-/* Row 1 Styles */
-.row1 {
+.row1, .row2 {
     display: flex;
     background-color: #2b2f38;
     padding: 20px;
@@ -45,46 +37,20 @@ footer {
     gap: 30px;
 }
 
-.row1 .column1 {
+.row1 .column1, .row2 .column1 {
     flex: 1;
     background-color: #374151;
     padding: 20px;
     border-radius: 8px;
 }
 
-.row1 .column2 {
+.row1 .column2, .row2 .column2 {
     flex: 1;
     background-color: #4b5563;
     padding: 20px;
     border-radius: 8px;
 }
 
-/* Row 2 Styles */
-.row2 {
-    display: flex;
-    flex-wrap: wrap;      
-    background-color: #2b2f38;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    gap: 30px;
-}
-
-.row2 .column1 {
-    flex: 1;
-    background-color: #374151;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.row2 .column2 {
-    flex: 1;
-    background-color: #4b5563;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-/* Make iframe responsive */
 .row2 .column2 iframe {
     width: 100%;
     height: 450px;
@@ -92,7 +58,6 @@ footer {
     border: 2px solid #1e293b;
 }
 
-/* Form styling */
 form {
     width: 100%;
 }
@@ -103,40 +68,49 @@ form textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #475569;
     border-radius: 4px;
-    background-color: #1e293b;
+    background-color: #e5e7eb;
     color: #000000;
 }
 
 form input[type="submit"] {
-    background-color: #3b82f6;
-    color: white;
+    background-color: #1e40af;
+    color: #ffffff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 form input[type="submit"]:hover {
-    background-color: #2563eb;
+    background-color: #1e3a8a;
 }
 
-/* Add spacing to image */
 .row1 .column2 img {
     margin-top: 10px;
     max-width: 100%;
     border-radius: 5px;
 }
 
-/* Responsive image scaling */
 .profile_img {
     max-width: 100%;
     height: auto;
 }
 
-/* Skip to main content link (off-screen until focused) */
+/* Fix link contrast inside dark boxes */
+.row1 .column2 a,
+.row2 .column1 a,
+.row2 .column2 a {
+    color: #bfdbfe;
+}
+
+.row1 .column2 a:hover,
+.row2 .column1 a:hover,
+.row2 .column2 a:hover {
+    color: #ffffff;
+}
+
+/* Skip link */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -151,22 +125,22 @@ form input[type="submit"]:hover {
   z-index: 1000;
 }
 
-/* Stack nav links vertically on smaller screens */
+/* Mobile nav */
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
-    flex-direction: column;   /* stack children vertically */
-    align-items: flex-start;  /* align links to the left */
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   nav a {
-    display: block;           /* make links block-level so they sit on separate lines */
-    width: 100%;              /* make each link take up full width */
-    text-align: center;       /* optional: centers link text */
-    margin: 8px 0;            /* add space between links */
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
   }
 
   nav span {
-    display: none;            /* hide the "|" separators on smaller screens */
+    display: none;
   }
 }
