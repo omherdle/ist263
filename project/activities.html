@@ -2,9 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Ski Experience Guide - Activities &amp; Atmosphere</title>
+  <title>Ski Experience Guide - Activities & Atmosphere</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background-color: #2c2c34;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #a7c7ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+
+    .text-column {
+      flex: 2;
+    }
+
+    .image-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .image-column img {
+      width: 90%;
+      max-width: 300px;
+      border: 10px solid #e0e0e0;
+      background-color: white;
+    }
+
+    article {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #2c2c34;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .image-column {
+        align-items: center;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
@@ -19,88 +107,94 @@
 </header>
 
 <main>
-  <section>
-    <h2>Trip Elements Beyond the Slopes</h2>
-    <p>Compare options for lodging, food, and activities — each with experience and price grades.</p>
-  </section>
 
-  <!-- LODGING -->
-  <section>
-    <h2>Lodging</h2>
+  <div class="text-column">
 
-    <article>
-      <h3>Luxury Ski Resort Hotel</h3>
-      <img src="media/amenities/luxury-hotel.png" alt="Luxury ski-in/ski-out resort hotel" width="220" loading="lazy">
-      <p>Top accommodations with ski-in/ski-out access and spa; extremely expensive.</p>
-      <p><strong>Experience Grade:</strong> A | <strong>Price Grade:</strong> C-</p>
-    </article>
+    <section>
+      <h2>Trip Elements Beyond the Slopes</h2>
+      <p>Compare options for lodging, food, and activities — each with experience and price grades.</p>
+    </section>
 
-    <article>
-      <h3>Mid-Range Lodge/Inn</h3>
-      <img src="media/amenities/midrange-hotel.png" alt="Mid-range ski lodge" width="220" loading="lazy">
-      <p>Comfortable rooms close to the slopes; a solid middle ground.</p>
-      <p><strong>Experience Grade:</strong> B+ | <strong>Price Grade:</strong> B</p>
-    </article>
+    <section>
+      <h2>Lodging</h2>
 
-    <article>
-      <h3>Budget Motel/Airbnb</h3>
-      <img src="media/amenities/motel-hotel.png" alt="Budget motel or Airbnb" width="220" loading="lazy">
-      <p>Very affordable with fewer comforts; often farther from the mountain.</p>
-      <p><strong>Experience Grade:</strong> C | <strong>Price Grade:</strong> A-</p>
-    </article>
-  </section>
+      <article>
+        <h3>Luxury Ski Resort Hotel</h3>
+        <p>Top accommodations with ski-in/ski-out access and spa; extremely expensive.</p>
+        <p><strong>Experience Grade:</strong> A | <strong>Price Grade:</strong> C-</p>
+      </article>
 
-  <!-- FOOD -->
-  <section>
-    <h2>Food Options</h2>
+      <article>
+        <h3>Mid-Range Lodge/Inn</h3>
+        <p>Comfortable rooms close to the slopes; a solid middle ground.</p>
+        <p><strong>Experience Grade:</strong> B+ | <strong>Price Grade:</strong> B</p>
+      </article>
 
-    <article>
-      <h3>Steakhouses</h3>
-      <img src="media/amenities/luxury-dining.png" alt="Steakhouse dinner" width="220" loading="lazy">
-      <p>Memorable après-ski meals; very pricey.</p>
-      <p><strong>Experience Grade:</strong> A | <strong>Price Grade:</strong> C</p>
-    </article>
+      <article>
+        <h3>Budget Motel/Airbnb</h3>
+        <p>Very affordable with fewer comforts; often farther from the mountain.</p>
+        <p><strong>Experience Grade:</strong> C | <strong>Price Grade:</strong> A-</p>
+      </article>
+    </section>
 
-    <article>
-      <h3>Casual Restaurant</h3>
-      <img src="media/amenities/midrange-dining.png" alt="Casual restaurant meal" width="220" loading="lazy">
-      <p>Convenient classics at moderate prices.</p>
-      <p><strong>Experience Grade:</strong> B+ | <strong>Price Grade:</strong> B</p>
-    </article>
+    <section>
+      <h2>Food Options</h2>
 
-    <article>
-      <h3>Cheap Fast Food</h3>
-      <img src="media/amenities/fastfood-dining.png" alt="Fast food tray" width="220" loading="lazy">
-      <p>Quick and budget-friendly, not very memorable.</p>
-      <p><strong>Experience Grade:</strong> C | <strong>Price Grade:</strong> A-</p>
-    </article>
-  </section>
+      <article>
+        <h3>Steakhouses</h3>
+        <p>Memorable après-ski meals; very pricey.</p>
+        <p><strong>Experience Grade:</strong> A | <strong>Price Grade:</strong> C</p>
+      </article>
 
-  <!-- OTHER ACTIVITIES -->
-  <section>
-    <h2>Other Activities</h2>
+      <article>
+        <h3>Casual Restaurant</h3>
+        <p>Convenient classics at moderate prices.</p>
+        <p><strong>Experience Grade:</strong> B+ | <strong>Price Grade:</strong> B</p>
+      </article>
 
-    <article>
-      <h3>Guided Snowmobile Tours</h3>
-      <img src="media/amenities/luxury-activity.png" alt="Guided snowmobile tour" width="220" loading="lazy">
-      <p>Thrilling rides with scenic views; pricey.</p>
-      <p><strong>Experience Grade:</strong> A- | <strong>Price Grade:</strong> C+</p>
-    </article>
+      <article>
+        <h3>Fast Food</h3>
+        <p>Quick and budget-friendly, not very memorable.</p>
+        <p><strong>Experience Grade:</strong> C | <strong>Price Grade:</strong> A-</p>
+      </article>
+    </section>
 
-    <article>
-      <h3>Local Shopping &amp; Village Exploration</h3>
-      <img src="media/amenities/midrange-activity.png" alt="Village shopping area" width="220" loading="lazy">
-      <p>Fun to walk around; costs vary by taste.</p>
-      <p><strong>Experience Grade:</strong> B+ | <strong>Price Grade:</strong> B</p>
-    </article>
+    <section>
+      <h2>Other Activities</h2>
 
-    <article>
-      <h3>Free Activities (Sledding, Walking Trails)</h3>
-      <img src="media/amenities/free-activity.png" alt="Family sledding on a snowy hill" width="220" loading="lazy">
-      <p>Simple, family-friendly, and free.</p>
-      <p><strong>Experience Grade:</strong> C+ | <strong>Price Grade:</strong> A+</p>
-    </article>
-  </section>
+      <article>
+        <h3>Guided Snowmobile Tours</h3>
+        <p>Thrilling rides with scenic views; pricey.</p>
+        <p><strong>Experience Grade:</strong> A- | <strong>Price Grade:</strong> C+</p>
+      </article>
+
+      <article>
+        <h3>Village Exploration &amp; Shopping</h3>
+        <p>Fun to walk around; costs vary by taste.</p>
+        <p><strong>Experience Grade:</strong> B+ | <strong>Price Grade:</strong> B</p>
+      </article>
+
+      <article>
+        <h3>Free Activities (Sledding, Trails)</h3>
+        <p>Simple, family-friendly, and free.</p>
+        <p><strong>Experience Grade:</strong> C+ | <strong>Price Grade:</strong> A+</p>
+      </article>
+    </section>
+
+  </div>
+
+  <div class="image-column">
+    <img src="media/amenities/luxury-hotel.png" alt="Luxury Hotel">
+    <img src="media/amenities/midrange-hotel.png" alt="Midrange Hotel">
+    <img src="media/amenities/motel-hotel.png" alt="Budget Lodging">
+    <img src="media/amenities/luxury-dining.png" alt="Steakhouse">
+    <img src="media/amenities/midrange-dining.png" alt="Casual Dining">
+    <img src="media/amenities/fastfood-dining.png" alt="Fast Food">
+    <img src="media/amenities/luxury-activity.png" alt="Snowmobile Tour">
+    <img src="media/amenities/midrange-activity.png" alt="Village Exploration">
+    <img src="media/amenities/free-activity.png" alt="Free Activities">
+  </div>
+
 </main>
 
 <footer>
